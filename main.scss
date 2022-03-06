@@ -1,0 +1,110 @@
+$primary-color: #ee6f06;
+$secondary-color: white;
+
+
+
+html{
+    font-family: Roboto, sans-serif;
+
+}
+body{
+    background-color: black;
+}
+
+*{
+    color: $secondary-color;
+}
+
+h1 {
+     color: $primary-color;
+     margin-bottom:0.2cm ;
+
+}
+
+h2 {color: $secondary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+h3{
+    color: $primary-color;
+}
+a{
+    color: $primary-color;
+}
+.personal{
+    display: flex;
+    margin-bottom: 2em;
+    
+}
+
+section{
+    margin-bottom: 1em;
+}
+
+.cv{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contacts{
+    margin-bottom: 2em;
+}
+
+.contact{
+    display: flex;
+
+     &_type {
+         min-width: 90px;
+     }
+}
+
+.experience{
+    display: flex;
+    margin-bottom: 2em;
+    &_date{
+        min-width: 185px;
+        margin-bottom: 1em;
+    }
+    &_name{
+        font-weight: bold;
+    }
+}
+
+.school{
+    display: flex;
+    margin-bottom: 2em;
+    &_date{
+        min-width: 185px;
+        margin-bottom: 1em;
+    }
+    &_name{
+        font-weight: bold;
+    }
+}
+
+.university{
+    display: flex;
+    margin-bottom: 2em;
+    &_date{
+        min-width: 185px;
+        margin-bottom: 1em;
+    }
+    &_name{
+        font-weight: bold;
+    }
+    
+}
+
+@media (max-width:575px) {
+    .experience{
+        display: block;
+    }
+    .school{
+        display: block
+    }
+    .university{
+        display: block;
+
+    }
+}
+
